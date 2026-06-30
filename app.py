@@ -16,7 +16,7 @@ st.markdown(
 # ─── SIDEBAR / MAIN VIDEO EMBED ───
 st.sidebar.markdown("### 🔬 Laboratory Hardware Link")
 st.sidebar.video(
-    "assets/lab_simulation.mp4", 
+    "lab_simulation.mp4", 
     format="video/mp4", 
     start_time=0,
     loop=True,
