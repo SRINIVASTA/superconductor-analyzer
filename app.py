@@ -1,4 +1,31 @@
 import streamlit as st
+
+# Custom styling hook to make media layout blend perfectly with Dark Mode
+st.markdown(
+    """
+    <style>
+    .stVideo {
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# ─── SIDEBAR / MAIN VIDEO EMBED ───
+st.sidebar.markdown("### 🔬 Laboratory Hardware Link")
+st.sidebar.video(
+    "assets/lab_simulation.mp4", 
+    format="video/mp4", 
+    start_time=0,
+    loop=True,
+    autoplay=True,
+    muted=True
+)
+
+
+import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
